@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 /*notes
  * you can make the id = counter for the user so he can access his account any time 
@@ -35,6 +36,11 @@ public class GoFo {
 				choice=input.nextInt();
 				switch(choice) {
 				case 1:
+					System.out.println("The Avalible Times are");
+					//this should be the array on line 74 slots
+					System.out.println(Arrays.toString(slots));
+					//if u want the bookedslot just print bookedslot the variable in book
+					player.Book();
 					break;
 				case 2:
 					counter--;

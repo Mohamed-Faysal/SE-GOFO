@@ -10,16 +10,19 @@ public class Playgrounds {
 	public void setPrice(double price) {
 		this.price=price;
 	}
-public void setTime(int [] times,int size) {
+	//Size is slote count 
+	public void setTime(int [] times,int size) {
 	this.Size=size;
+		
 		for(int i=0;i<size;i++) {
 			this.times[i]=times[i];
 		}
 	}
-public double getPrice() {
+	public double getPrice() {
 	return price;
-}
-public String getTimes() {
+	}
+	public String getTimes() {
+	
 	String timeSlot="";
 	int slot=0;
 	for(int i=0;i<Size;i++) {
@@ -46,11 +49,12 @@ public String getTimes() {
 	case 7:
 		timeSlot+=" 10 to 12 PM";
 	break;
+	
 	}//switch
 	}//for loop
 	
 	return timeSlot;
-}
+	}
 	public String toString() {
 		return "Price is :"+getPrice()+" times: "+getTimes() ;
 	}
