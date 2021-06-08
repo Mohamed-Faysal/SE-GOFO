@@ -1,36 +1,24 @@
+
 public class Playgrounds {
-    private String name;
-    private int[] time;
-    private static int id =0;
-    private int price;
-
-    public void setname(String Name){
-        this.name =Name;
-    }
-    public void settime(int[] Time ){
-        this.time=Time;
-    }
-    public void setid(int ID){
-        this.id=ID;
-    }
-    public void setprice(int Price){
-        this.price =Price;
-    }
-    public int getprice(){
-        return price;
-    }
-    public String getname(){
-        return name;
-    }
-    public int[] gettime(){
-        return time;
-    }
-    public int getid(){
-        return id;
-    }
-    
-
-    public String ToString(){
-        return name + " " + time + " " + price ;
-    }
+	private double price;
+	private int [] times;
+	public static int id=0;
+	public Playgrounds() {
+		id++;
+	}
+	public void setPrice(double price) {
+		this.price=price;
+	}
+public void setTime(int [] times) {
+		this.times=times;
+	}
+public double getPrice() {
+	return price;
+}
+public int[] getTimes() {
+	return times;
+}
+	public String toString() {
+		return "Price is :"+getPrice()+" times: "+getTimes() ;
+	}
 }
