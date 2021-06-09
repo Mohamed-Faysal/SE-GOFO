@@ -1,41 +1,24 @@
 /**@author Mohammed Faysal & Jamal Bakri 
- * @version 1.0.0 2021/8/4
+ * @version 1.2.0 2021/8/4
  */
-import java.util.Scanner;
-public class Player extends Playgrounds{
+public class Player {
+
 	private String name;
-	public static int IDnumber=0;
+	public static int IDnumber=0; //keep track of player in case added sign in  feature 
 	/**Counter for the Player 
 	 *@param Player */
 	public Player() {
 		IDnumber++;
 	}
-	
-	/** Setter for name 
-	 * @param name */
+	/** sets a name variable for name 
+	 *@param name returns parameter*/
 	public void setName(String name) {
 		this.name=name;
 	}
-	
 	/** returns the name 
 	 * @return String */
 	public String getName() {
 		return name;
 	}
-	/**Book a playground for the player
-	 *@param Book */
-	public void Book(){
-		Scanner Slotinput = new Scanner(System.in); 
-		System.out.println("Enter Desired time slot :");
-		int bookedslot = Slotinput.nextInt();
-	}
-	
-	/** display class content
-	 * @return String
-	 */
-	public String ToStrig(){
-		return name + " " +IDnumber;
-	}
 }
-
 
