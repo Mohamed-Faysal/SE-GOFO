@@ -1,16 +1,27 @@
-
+/**@author Jamal Bakri
+ * @version 1.0.0 2021/8/4 
+ */
 public class Playgrounds {
 	private double price;
 	private int [] times= new int [3];
 	private int Size;
 	public static int id=0;
+	/**Counter for the id of playgroundOwner
+	 *@param PlaygroundOwner */
 	public Playgrounds() {
 		id++;
 	}
+	
+	/** setter for pricw 
+	 * @param price
+	 */
 	public void setPrice(double price) {
 		this.price=price;
 	}
-	//Size is slote count 
+	
+	/** Takes time and how many open times in a playgorund 
+	 * @param times avalible times
+	 * @param size  how many time slots are avalible */
 	public void setTime(int [] times,int size) {
 	this.Size=size;
 		
@@ -18,9 +29,17 @@ public class Playgrounds {
 			this.times[i]=times[i];
 		}
 	}
+	
+	/** getter for price 
+	 * @return double 
+	 */
 	public double getPrice() {
 	return price;
 	}
+	
+	/**Display all the time slots so that owners can chose  
+	 * @return String 
+	 */
 	public String getTimes() {
 	
 	String timeSlot="";
@@ -50,11 +69,15 @@ public class Playgrounds {
 		timeSlot+=" 10 to 12 PM";
 	break;
 	
-	}//switch
-	}//for loop
+			}
+		}
 	
-	return timeSlot;
+		return timeSlot;
 	}
+	
+	/** display class content
+	 * @return String
+	 */
 	public String toString() {
 		return "Price is :"+getPrice()+" times: "+getTimes() ;
 	}

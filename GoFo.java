@@ -38,7 +38,7 @@ public class GoFo {
 				case 1:
 					System.out.println("The Avalible Times are");
 					//this should be the array on line 74 slots
-					System.out.println(Arrays.toString(slots));
+					//System.out.println(Arrays.toString(slots));
 					//if u want the bookedslot just print bookedslot the variable in book
 					player.Book();
 					break;
